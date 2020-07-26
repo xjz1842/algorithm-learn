@@ -1,7 +1,7 @@
-package comalgorithms.compare;
+package comalgorithms.leetcode;
 
 
-public class RegexMatch {
+public class RegexMatch_10 {
 
     //动态规划
     public static boolean isMatch(String s, String p) {
@@ -44,8 +44,8 @@ public class RegexMatch {
 
     //匹配. *
     public static void main(String[] args) {
-        String s = "";
-        String p = ".*";
+        String s = "aaaaaab";
+        String p = "a*b";
 
         System.out.println(isMatch(s, p));
     }

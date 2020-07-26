@@ -1,7 +1,7 @@
 package comalgorithms.tree;
 
 
-public class TransfomerTree {
+public class TransformerTree {
 
     public static class TreeNode {
         int val;
