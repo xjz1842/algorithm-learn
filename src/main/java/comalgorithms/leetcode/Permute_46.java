@@ -22,7 +22,10 @@ public class Permute_46 {
 
     private static void process(int n, int index, List<Integer> out, List<List<Integer>> result) {
         if (index == n) {
-            result.add(new ArrayList<>(out));
+            List<Integer> list = new ArrayList<>(out);
+            if (!result.contains(list)) {
+                result.add(list);
+            }
         } else {
             for (int i = index; i <= n; i++) {
                 Collections.swap(out, i, index);
@@ -33,7 +36,7 @@ public class Permute_46 {
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[]{1, 2, 3};
+        int[] nums = new int[]{1, 1, 2};
         List<List<Integer>> list = permute(nums);
 
         for (List<Integer> subList : list) {
