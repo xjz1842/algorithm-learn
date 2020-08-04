@@ -1,9 +1,9 @@
 package comalgorithms.leetcode;
 
 
-public class RotateMatrix {
+public class RotateMatrix_48 {
 
-    public static void rotate(int[][] matrix) {
+    private static void rotate(int[][] matrix) {
         if (matrix.length <= 1) {
             return;
         }

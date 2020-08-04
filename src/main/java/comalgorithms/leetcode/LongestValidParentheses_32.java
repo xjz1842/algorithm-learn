@@ -4,7 +4,7 @@ package comalgorithms.leetcode;
 public class LongestValidParentheses_32 {
 
     //动态规划
-    public static int longestValidParentheses(String s) {
+    private static int longestValidParentheses(String s) {
         if (s == null || s.length() == 0) return 0;
 
         char[] ss = s.toCharArray();
@@ -12,11 +12,10 @@ public class LongestValidParentheses_32 {
         int len = ss.length;
         //dp 转移方程
         //dp[i] 表示0到i上最大有效括号数
-        //
-        // 1)ss[i] = '(' = dp[i-1] (如果是"）",直接是等于上一个最大有效括号数)
-        // 2）ss[i] = ')' 则等于 ss[i-dp[i-1]-1] = '('
+        // 1）ss[i] = ')' 则等于 ss[i-dp[i-1]-1] = '('
         //   dp[i] = dp[i-1] + 2;  (())
-        //   ss[i] = ')'，如果前一个是等于'('，则等于dp[i-2]+2
+        //   ss[i] = ')
+        // 2) i-dp[i-1]-1 : dp[i] = 0
         int[] dp = new int[len + 1];
 
         dp[0] = 0;
