@@ -8,8 +8,10 @@
     <artifactId>algorithms-practice</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>senior</module>
+        <module>basic</module>
     </modules>
 
     <properties>
