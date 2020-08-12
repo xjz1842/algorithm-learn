@@ -1,6 +1,6 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
-public class RemoveDuplicates {
+public class leetcode_26_RemoveDuplicates {
 
     public static int removeDuplicates(int[] nums) {
 

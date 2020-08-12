@@ -1,4 +1,4 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
 /**
  * 最长子矩阵

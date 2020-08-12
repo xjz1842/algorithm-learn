@@ -1,10 +1,10 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ThreeSum {
+public class leetcode_15_ThreeSum {
 
     //计算三个数据和等于0
     public static List<List<Integer>> threeSum(int[] nums) {

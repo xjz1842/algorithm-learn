@@ -1,7 +1,7 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
 
-public class LongestValidParentheses_32 {
+public class leetcode_32_LongestValidParentheses {
 
     //动态规划
     private static int longestValidParentheses(String s) {

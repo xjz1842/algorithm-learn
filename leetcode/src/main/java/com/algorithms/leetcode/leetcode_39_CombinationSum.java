@@ -1,4 +1,4 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
 import java.util.*;
 
@@ -22,7 +22,7 @@ import java.util.*;
  * [2,2,3]
  * ]
  */
-public class CombinationSum_39 {
+public class leetcode_39_CombinationSum {
 
     public static List<List<Integer>> combinationSum(int[] candidates, int target) {
 

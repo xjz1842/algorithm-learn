@@ -1,8 +1,8 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
 import java.util.*;
 
-public class GroupAnagrams {
+public class leetcode_49_GroupAnagrams {
 
     private static List<List<String>> groupAnagrams(String[] strs) {
         if (strs == null || strs.length == 0)

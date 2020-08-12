@@ -6,6 +6,8 @@ public class ListNode {
 
     ListNode next;
 
+    ListNode rand;
+
     ListNode(int x) {
         val = x;
     }

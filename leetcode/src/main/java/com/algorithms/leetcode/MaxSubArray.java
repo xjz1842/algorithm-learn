@@ -1,4 +1,4 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
 public class MaxSubArray {
 

@@ -1,4 +1,4 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
 
 import java.util.ArrayList;
@@ -9,11 +9,9 @@ import java.util.List;
  * <p>
  * 注意子串要与 words 中的单词完全匹配，中间不能有其他字符，但不需要考虑 words 中单词串联的顺序。
  * <p>
- * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words
- * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class findSubstring {
+public class leetcode_30_findSubstring {
 
 
     public static List<Integer> findSubstring(String s, String[] words) {
@@ -59,19 +57,16 @@ public class findSubstring {
             count = words.length;
             //恢复
             System.arraycopy(wordCopy, 0, words, 0, wordCopy.length);
-
         }
         return result;
     }
 
 
     public static void main(String[] args) {
-
         String s = "a";
         String[] words = {"a"};
 
         List<Integer> list = findSubstring(s, words);
-
         System.out.println(list);
     }
 }

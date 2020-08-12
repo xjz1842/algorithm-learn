@@ -1,7 +1,7 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
 
-public class IsMatch_44 {
+public class leetcode_44_IsMatch {
 
     public static boolean isMatch(String s, String p) {
         if (s == null || p == null)

@@ -1,7 +1,7 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
 
-public class RegexMatch_10 {
+public class leetcode_10_RegexMatch {
 
     //动态规划
     public static boolean isMatch(String s, String p) {

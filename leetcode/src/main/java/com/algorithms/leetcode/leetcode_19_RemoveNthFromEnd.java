@@ -1,10 +1,10 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RemoveNthFromEnd {
+public class leetcode_19_RemoveNthFromEnd {
 
     public static class ListNode {
         int val;

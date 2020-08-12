@@ -1,7 +1,7 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
 
-public class RotateMatrix_48 {
+public class leetcode_48_RotateMatrix {
 
     private static void rotate(int[][] matrix) {
         if (matrix.length <= 1) {

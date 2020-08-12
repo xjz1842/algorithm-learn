@@ -12,6 +12,7 @@
     <modules>
         <module>senior</module>
         <module>basic</module>
+        <module>leetcode</module>
     </modules>
 
     <properties>

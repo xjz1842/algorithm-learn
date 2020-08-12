@@ -1,10 +1,10 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Permute_46 {
+public class leetcode_46_Permute {
 
     public static List<List<Integer>> permute(int[] nums) {
         if (nums == null || nums.length == 0)

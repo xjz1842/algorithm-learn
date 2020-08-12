@@ -1,8 +1,8 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
 import java.util.Stack;
 
-public class IsValid {
+public class leetcode_20_IsValid {
 
     public static boolean isValid(String s) {
 

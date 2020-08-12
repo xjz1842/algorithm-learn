@@ -1,6 +1,6 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
-public class Pow_50 {
+public class leetcode_50_Pow {
 
     public static double myPow(double x, int n) {
         if (n == 0) return 1;

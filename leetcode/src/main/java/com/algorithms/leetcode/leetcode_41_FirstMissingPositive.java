@@ -1,6 +1,6 @@
-package algorithms.leetcode;
+package com.algorithms.leetcode;
 
-public class FirstMissingPositive_41 {
+public class leetcode_41_FirstMissingPositive {
 
 
     public static int firstMissingPositive(int[] nums) {
