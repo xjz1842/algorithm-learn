@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class leetcode_57_insertArr {
+public class leetcode_57_InsertArr {
 
     public static int[][] insert(int[][] intervals, int[] newInterval) {
         if (intervals == null) {

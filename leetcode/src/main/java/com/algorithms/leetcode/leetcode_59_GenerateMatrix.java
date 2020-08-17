@@ -1,6 +1,6 @@
 package com.algorithms.leetcode;
 
-public class leetcode_59_generateMatrix {
+public class leetcode_59_GenerateMatrix {
 
     public static int[][] generateMatrix(int n) {
         if (n == 0) return new int[][]{};

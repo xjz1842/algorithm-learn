@@ -1,6 +1,6 @@
 package com.algorithms.leetcode;
 
-public class leetcode_74_searchMatrix {
+public class leetcode_74_SearchMatrix {
 
     public static boolean searchMatrix(int[][] matrix, int target) {
         if (matrix == null || matrix.length == 0)

@@ -10,7 +10,7 @@ package com.algorithms.leetcode;
  * 删除一个字符
  * 替换一个字符
  */
-public class leetcode_72_minDistance {
+public class leetcode_72_MinDistance {
 
     public static int minDistance(String word1, String word2) {
         if (word1 == null && word2 == null) {

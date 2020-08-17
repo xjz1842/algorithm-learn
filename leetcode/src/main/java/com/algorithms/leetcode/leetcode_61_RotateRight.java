@@ -3,7 +3,7 @@ package com.algorithms.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class leetcode_61_rotateRight {
+public class leetcode_61_RotateRight {
 
     public static class ListNode {
         int val;

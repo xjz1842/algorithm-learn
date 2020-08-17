@@ -1,7 +1,7 @@
 package com.algorithms.leetcode;
 
 
-public class leetcode_66_plusOne {
+public class leetcode_66_PlusOne {
 
     public static int[] plusOne(int[] digits) {
         if (digits == null || digits.length == 0) {

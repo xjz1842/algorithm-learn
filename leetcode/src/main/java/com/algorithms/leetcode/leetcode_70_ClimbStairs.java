@@ -1,6 +1,6 @@
 package com.algorithms.leetcode;
 
-public class leetcode_70_climbStairs {
+public class leetcode_70_ClimbStairs {
 
     public static int climbStairs(int n) {
         if (n == 0) return 0;
