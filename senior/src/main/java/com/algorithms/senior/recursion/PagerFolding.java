@@ -1,4 +1,4 @@
-package algorithms.recursion;
+package com.algorithms.senior.recursion;
 
 public class PagerFolding {
 
