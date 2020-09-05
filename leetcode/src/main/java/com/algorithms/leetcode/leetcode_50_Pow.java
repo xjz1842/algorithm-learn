@@ -15,8 +15,9 @@ public class leetcode_50_Pow {
             n = Math.abs(n);
             x = 1 / x;
         }
-        if (n < 0) {
-            n = Integer.MAX_VALUE - 1;
+        //讨论n是Integer。MIN_VALUE
+        if (n == Integer.MIN_VALUE) {
+            return (x == 1D || x == -1D) ? 1D : 0D;
         }
         double result = 1.0;
 

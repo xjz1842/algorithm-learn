@@ -60,9 +60,9 @@ public class SerializeAndReconstructTree {
         if (head == null) {
             ans.add(null);
         } else {
-            pres(head.left, ans);
+            mid(head.left, ans);
             ans.add(String.valueOf(head.value));
-            pres(head.right, ans);
+            mid(head.right, ans);
         }
     }
 

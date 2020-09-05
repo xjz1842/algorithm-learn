@@ -23,9 +23,9 @@ public class RecursiveTraversalBT {
     public static void mid(Node head) {
         if (head == null) return;
 
-        pre(head.left);
+        mid(head.left);
         System.out.println(head.value);
-        pre(head.right);
+        mid(head.right);
     }
 
     public static void pos(Node head) {
