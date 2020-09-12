@@ -1,8 +1,5 @@
 package com.algorithms.leetcode.onehundred;
 
-
-import java.util.List;
-
 public class leetcode_87_Merge {
 
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
