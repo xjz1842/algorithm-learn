@@ -1,6 +1,8 @@
 package com.algorithms.leetcode.onehundred;
 
 
+import java.io.File;
+
 public class leetcode_10_RegexMatch {
 
     //动态规划
@@ -48,5 +50,9 @@ public class leetcode_10_RegexMatch {
         String p = "a*b";
 
         System.out.println(isMatch(s, p));
+
+        File file = new File("/Users/zxj/github/algorithms/leetcode/src/main/java/com/algorithms/leetcode/onehundred");
+
+        System.out.println(file.listFiles().length);
     }
 }

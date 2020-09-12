@@ -1,6 +1,6 @@
 package com.algorithms.leetcode.onehundred;
 
-public class leetcode_87_Merge {
+public class leetcode_88_Merge {
 
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
         if (nums1 == null || nums1.length == 0) {

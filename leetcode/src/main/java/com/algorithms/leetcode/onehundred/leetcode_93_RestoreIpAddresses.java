@@ -3,7 +3,7 @@ package com.algorithms.leetcode.onehundred;
 import java.util.ArrayList;
 import java.util.List;
 
-public class leetcode_99_RestoreIpAddresses {
+public class leetcode_93_RestoreIpAddresses {
 
     public static List<String> restoreIpAddresses(String s) {
         if (s == null) return new ArrayList<>();
