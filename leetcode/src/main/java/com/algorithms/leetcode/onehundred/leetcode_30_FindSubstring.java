@@ -11,7 +11,7 @@ import java.util.List;
  * <p>
  * 链接：https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words
  */
-public class leetcode_30_findSubstring {
+public class leetcode_30_FindSubstring {
 
 
     public static List<Integer> findSubstring(String s, String[] words) {

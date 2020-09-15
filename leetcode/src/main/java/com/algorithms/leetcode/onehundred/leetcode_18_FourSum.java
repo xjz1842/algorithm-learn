@@ -6,7 +6,8 @@ import java.util.List;
 
 public class leetcode_18_FourSum {
 
-    public static List<List<Integer>> fourSum(int[] nums, int target) {
+
+    public List<List<Integer>> fourSum(int[] nums, int target) {
         if (nums == null || nums.length < 3) return new ArrayList<>();
         //首先排序
         Arrays.sort(nums);
@@ -16,10 +17,12 @@ public class leetcode_18_FourSum {
 
         for (int i = 0; i < len; i++) {
             int tempTarget = target - nums[i];
-            if (i > 0 && i <= len - 3 && nums[i] == nums[i - 1]) continue; // 去重
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue; // 去重
+            }
             for (int j = i + 1; j < len; j++) {
                 if (j > i + 1 && nums[j] == nums[j - 1]) {
-                    j++;
+                    continue;
                 } // 去重
                 int l = j + 1;
                 int r = nums.length - 1;
@@ -54,6 +57,7 @@ public class leetcode_18_FourSum {
         return result;
     }
 
+<<<<<<< HEAD
     public static void main(String[] args) {
 
         int[] arr = new int[]{-1, 0, 1, 2, -1, -4};
@@ -69,4 +73,6 @@ public class leetcode_18_FourSum {
         }
     }
 
+=======
+>>>>>>> 增加leetcode 四数之和
 }
