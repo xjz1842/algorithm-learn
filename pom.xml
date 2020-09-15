@@ -13,6 +13,7 @@
         <module>basic</module>
         <module>leetcode</module>
         <module>senior</module>
+        <module>interview</module>
     </modules>
 
     <properties>
