@@ -7,7 +7,7 @@ import java.util.List;
 public class leetcode_18_FourSum {
 
 
-    public List<List<Integer>> fourSum(int[] nums, int target) {
+    public static List<List<Integer>> fourSum(int[] nums, int target) {
         if (nums == null || nums.length < 3) return new ArrayList<>();
         //首先排序
         Arrays.sort(nums);
@@ -57,7 +57,6 @@ public class leetcode_18_FourSum {
         return result;
     }
 
-<<<<<<< HEAD
     public static void main(String[] args) {
 
         int[] arr = new int[]{-1, 0, 1, 2, -1, -4};
@@ -72,7 +71,4 @@ public class leetcode_18_FourSum {
             System.out.println();
         }
     }
-
-=======
->>>>>>> 增加leetcode 四数之和
 }

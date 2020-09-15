@@ -2,7 +2,6 @@ package com.algorithms.leetcode.onehundred;
 
 public class leetcode_16_ThreeSumClosest {
 
-
     public static int threeSumClosest(int[] nums, int target) {
         if (nums == null || nums.length < 3)
             return 0;
