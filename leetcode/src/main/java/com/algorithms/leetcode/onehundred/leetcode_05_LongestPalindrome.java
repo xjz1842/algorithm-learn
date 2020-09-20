@@ -1,6 +1,6 @@
 package com.algorithms.leetcode.onehundred;
 
-public class leetcode_5_LongestPalindrome {
+public class leetcode_05_LongestPalindrome {
 
     public static String longestPalindrome(String s) {
         if (s == null) {
