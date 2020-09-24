@@ -13,7 +13,6 @@ import java.util.List;
  */
 public class leetcode_30_FindSubstring {
 
-
     public static List<Integer> findSubstring(String s, String[] words) {
         List<Integer> result = new ArrayList<>();
         int wordNum = words.length;
