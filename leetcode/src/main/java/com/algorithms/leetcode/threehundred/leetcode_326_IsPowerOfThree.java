@@ -1,5 +1,6 @@
 package com.algorithms.leetcode.threehundred;
 
+
 public class leetcode_326_IsPowerOfThree {
 
     public static boolean isPowerOfThree(int n) {
@@ -27,5 +28,6 @@ public class leetcode_326_IsPowerOfThree {
         int n = 129140163;
 
         System.out.println(isPowerOfThree(n));
+
     }
 }
