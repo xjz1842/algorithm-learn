@@ -16,7 +16,7 @@ public class leetcode_123_MaxProfit {
         dp[0][2][0] = 0;
         dp[0][2][1] = -prices[0];
         for (int i = 1; i < len; i++) {
-            for (int j = 2; j >= 1; j--) {
+            for (int j = 1; j <= 2; j++) {
                 dp[i][j][0] = Math.max(dp[i - 1][j][1] + prices[i], dp[i - 1][j][0]);
 
                 dp[i][j][1] = Math.max(dp[i - 1][j][1], dp[i - 1][j - 1][0] - prices[i]);
