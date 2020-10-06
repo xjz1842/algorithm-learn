@@ -28,7 +28,7 @@ public class leetcode_116_Connect {
 
     public Node connect(Node root) {
         if (root == null)
-            return root;
+               return root;
         Queue<Node> queue = new LinkedList<>();
         queue.add(root);
         while (!queue.isEmpty()) {
