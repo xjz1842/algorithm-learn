@@ -75,11 +75,7 @@ public class leetcode_67_AddBinary {
         }
         StringBuilder ans = new StringBuilder();
         for (char c : newArr) {
-            if (c == '\u0000') {
-                ans.append('0');
-            } else {
-                ans.append(c);
-            }
+            ans.append(c);
         }
         if (carry == 1) {
             return "1" + ans.toString();
@@ -95,7 +91,7 @@ public class leetcode_67_AddBinary {
     }
 
     public static void main(String[] args) {
-        String a = "0", b = "0";
+        String a = "11", b = "1";
         System.out.println(addBinary(a, b));
     }
 }
