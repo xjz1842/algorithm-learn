@@ -60,7 +60,7 @@ public class leetcode_147_InsertionSortList {
                 pre.next = cur.next;         //删除当前节点
                 cur.next = p.next;          //将当前节点连接到对应位置
                 p.next = cur;               // 将cur放在正确的位置
-                cur = pre.next;             //
+                cur = pre.next;           //往后移动
             }
         }
         return dummy.next;
