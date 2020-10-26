@@ -57,7 +57,7 @@ public class RadixSort {
 
             for (i = R; R >= L; i--) {
                 j = getDigit(arr[i], d);
-                //count[i] - j表示0...i的
+                //count[i] - j表示0...i
                 help[count[j] - 1] = arr[i];
                 count[j]--;
             }
