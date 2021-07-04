@@ -1,4 +1,4 @@
-package com.algorithms.interview;
+package com.algorithms.interview.other;
 
 /*
  * 给定一个数组arr，长度为N，arr中的值不是0就是1
