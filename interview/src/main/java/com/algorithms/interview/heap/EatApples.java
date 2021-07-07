@@ -50,11 +50,11 @@ public class EatApples {
             }
             if(!priorityQueue.isEmpty()){
                 // 选出今天吃的
-                Node cur = priorityQueue.poll();
+                Node cur = priorityQueue.peek();
                 eatDays++;
                 //吃完放回
-                if(--cur.fruitCount > 0 ){
-                    priorityQueue.add(cur);
+                if(--cur.fruitCount == 0 ){
+                    priorityQueue.poll();
                 }
             }
             i++;

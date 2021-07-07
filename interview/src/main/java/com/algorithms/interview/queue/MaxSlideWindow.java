@@ -12,7 +12,7 @@ import java.util.List;
  *
  * 输出：[3,3,5,5]
  */
-public class SlideWindow {
+public class MaxSlideWindow {
 
     // 单调队列使用双端队列来实现
     private static ArrayDeque<Integer> Q = new ArrayDeque<Integer>();
@@ -57,9 +57,9 @@ public class SlideWindow {
 
 
     public static void main(String[] args) {
-        int[] window = new int[]{1,3,-1,-3,5,3};
+        int[] window = new int[]{1};
 
-        for(int x : maxSlidingWindow(window,3)){
+        for(int x : maxSlidingWindow(window,1)){
             System.out.println(x);
         }
     }
