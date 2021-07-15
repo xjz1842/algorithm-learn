@@ -2,7 +2,7 @@ package com.algorithms.interview.tree;
 
 import java.util.*;
 
-public class PreorderTraversal {
+public class OrderTraversal {
 
     public static List<Integer> preorderTraversal(TreeNode root) {
         // 用来进行递归的栈
@@ -13,27 +13,31 @@ public class PreorderTraversal {
         if (root == null) {
             return new ArrayList<>();
         }
-        s.push(root);
+         TreeNode cur = root;
         // 开始利用栈来进行遍历
-        while (!s.isEmpty()) {
-            TreeNode node = s.pop();
-            ans.add(node.val);
+        while (!s.isEmpty() || cur != null) {
 
-            if (node.left != null) {
-                s.push(node.left);
+            while (cur != null){
+                ans.add(cur.val);
+                s.push(cur);
+                cur = cur.left;
             }
-            if (node.right != null) {
-                s.push(node.right);
-            }
+            cur = s.pop();
+            cur = cur.right;
+//            if (node.right != null) {
+//                s.push(node.right);
+//            }
+//            if (node.left != null) {
+//                s.push(node.left);
+//            }
         }
         return ans;
     }
 
-    public List<Integer> inorderTraversal(TreeNode root) {
-        if (root != null) {
+    public static  List<Integer> inorderTraversal(TreeNode root) {
+        if (root == null) {
             return new ArrayList<>();
         }
-
         TreeNode cur = root;
         // 用来存放遍历的结果，不算在空间复杂度里面
         List<Integer> ans = new ArrayList<>();
@@ -90,6 +94,8 @@ public class PreorderTraversal {
         root.right.left = new TreeNode(5);
         root.right.right = new TreeNode(7);
 
+        System.out.println(preorderTraversal(root));
+        System.out.println(inorderTraversal(root));
         System.out.println(postorderTraversal(root));
     }
 }
