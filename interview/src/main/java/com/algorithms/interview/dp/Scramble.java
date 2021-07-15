@@ -24,7 +24,7 @@ package com.algorithms.interview.dp;
 public class Scramble {
 
     //区间DP
-    boolean isScramble(String s1, String s2) {
+   static boolean isScramble(String s1, String s2) {
         if (s1 == null || s2 == null || s1.length() != s2.length())
             return false;
         // N表示后面字符串的长度
@@ -86,6 +86,8 @@ public class Scramble {
     }
 
     public static void main(String[] args) {
-
+        String s1 = "great";
+        String s2 = "rgeat";
+        System.out.println(isScramble(s1,s2));
     }
 }

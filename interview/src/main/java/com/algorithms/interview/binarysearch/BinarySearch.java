@@ -33,33 +33,7 @@ public class BinarySearch {
         return false;
     }
 
-    //下边界 区间 [m r)
-    int lowerBound(long[] A, int n, long target) {
-        int l = 0, r = n;
-        while (l < r) {
-            final int m = l + ((r - l) >> 1);
-            if (A[m] < target) {
-                l = m + 1;
-            } else {
-                r = m;
-            }
-        }
-        return l;
-    }
 
-    //上边界  区间 (m, r]
-    int upperBound(long[] A, int n, long target) {
-        int l = 0, r = n;
-        while (l < r) {
-            final int m = l + ((r - l) >> 1);
-            if (A[m] <= target) {
-                l = m + 1;
-            } else {
-                r = m;
-            }
-        }
-        return l;
-    }
 
     public static void main(String[] args) {
         long[] arr = new long[]{3, 34, 55, 76, 100};
