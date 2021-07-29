@@ -1,6 +1,9 @@
 package com.algorithms.leetcode.secondhundred;
 
-import javafx.util.Pair;
+
+
+
+import com.sun.tools.javac.util.Pair;
 
 import java.util.*;
 
@@ -21,8 +24,8 @@ public class leetcode_126_LadderLength {
 
         while (!Q.isEmpty()) {
             Pair<String, Integer> node = Q.remove();
-            List<String> nextWordList = findOneDiffWord(node.getKey(), cache);
-            int level = node.getValue();
+            List<String> nextWordList = findOneDiffWord(node.fst, cache);
+            int level = node.snd;
             for (String word : nextWordList) {
                 if (word.equals(endWord)) {
                     return level + 1;
