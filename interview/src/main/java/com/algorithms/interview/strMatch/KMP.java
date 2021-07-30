@@ -99,7 +99,6 @@ public class KMP {
         while (i < mainLen && j < subLen) {
             if (j == -1 || main.charAt(i) == sub.charAt(j)) {
                 // 如果匹配成功，那么向前走
-                // 这里和暴力的方法没有区别
                 i++;
                 j++;
             } else {
