@@ -34,7 +34,7 @@ public class UnionFindSet {
     }
 
     //合并
-    void  union(int x, int y) {
+    void union(int x, int y) {
         int xparent = find(x);
         int yparent = find(y);
         // 将x所在集合，合并到y所在集合
