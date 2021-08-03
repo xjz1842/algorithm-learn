@@ -18,7 +18,7 @@ package com.algorithms.interview.sort;
 public class MergeArray {
 
     //不用申请数据的情况下
-    public void merge(int[] nums1, int m, int[] nums2, int n) {
+    public static void merge(int[] nums1, int m, int[] nums2, int n) {
         int tail = n + m - 1;
 
         int i = m - 1;
@@ -34,7 +34,12 @@ public class MergeArray {
     }
 
     public static void main(String[] args) {
-
+        int[] nums1 = new int[]{1,2,3,0,0,0};
+        int[] nums2 = new int[]{2,3,4};
+        merge(nums1,3,nums2, nums2.length);
+        for(int i : nums1){
+            System.out.println(i);
+        }
     }
 
 }
