@@ -17,7 +17,8 @@ public class ReversePairs {
         while (i < m || j < e) {
             if (j >= e || i < m && a[i] <= a[j]) {
                 t[to++] = a[i++];
-                cnt += j - m; // 就在这里加一行代码就可以了。
+                //i 和 (j-m) 中任意一个组成逆序对
+                cnt += j - m;
             } else {
                 t[to++] = a[j++];
             }
