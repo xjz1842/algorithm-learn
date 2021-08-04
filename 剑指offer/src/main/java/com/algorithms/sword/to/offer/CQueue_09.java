@@ -2,14 +2,14 @@ package com.algorithms.sword.to.offer;
 
 import java.util.*;
 
-public class CQueue_09_offer {
+public class CQueue_09 {
     Stack<Integer> s;
     Stack<Integer> s1;
 
     Deque<Integer> stack1;
     Deque<Integer> stack2;
 
-    public CQueue_09_offer() {
+    public CQueue_09() {
         s = new Stack<>();
         s1 = new Stack<>();
 
@@ -71,7 +71,7 @@ public class CQueue_09_offer {
     }
 
     public static void main(String[] args) {
-        CQueue_09_offer queue = new CQueue_09_offer();
+        CQueue_09 queue = new CQueue_09();
         queue.deleteHead();
         queue.appendTail(5);
         queue.appendTail(2);
