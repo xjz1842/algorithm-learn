@@ -14,6 +14,7 @@
         <module>leetcode</module>
         <module>senior</module>
         <module>interview</module>
+        <module>剑指offer</module>
     </modules>
 
     <properties>
