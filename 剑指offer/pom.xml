@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId> sword to offer</artifactId>
+    <artifactId>sword_to_offer</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
