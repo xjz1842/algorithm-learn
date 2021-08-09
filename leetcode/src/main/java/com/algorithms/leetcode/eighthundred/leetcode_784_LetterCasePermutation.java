@@ -38,6 +38,35 @@ public class leetcode_784_LetterCasePermutation {
          stringBuilder.deleteCharAt(stringBuilder.length()-1);
     }
 
+    //二分掩码
+    public static List<String> letterCasePermutation1(String s) {
+        int B = 0;
+        for (char c: s.toCharArray())
+            if (Character.isLetter(c))
+                B++;
+
+        List<String> ans = new ArrayList();
+
+        for(int bits = 0; bits < (1 << B); bits++){
+            StringBuilder word = new StringBuilder();
+            int i = 0;
+            char[] chars = s.toCharArray();
+            for(char letter : chars){
+                if (Character.isLetter(chars[i])) {
+                    if(((bits >> i++) & 1) == 1){
+                        word.append(Character.toUpperCase(letter));
+                    }else{
+                        word.append(Character.toLowerCase(letter));
+                    }
+                }else{
+                    word.append(letter);
+                }
+            }
+            ans.add(word.toString());
+        }
+        return ans;
+    }
+
 
     public static void main(String[] args) {
         String s = "12345";
