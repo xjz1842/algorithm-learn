@@ -1,4 +1,4 @@
-package com.algorithms.leetcode.sevenhundred;
+package com.algorithms.leetcode.eighthundred;
 
 import java.util.*;
 

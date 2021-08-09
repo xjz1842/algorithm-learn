@@ -1,4 +1,4 @@
-package com.algorithms.leetcode.sevenhundred;
+package com.algorithms.leetcode.eighthundred;
 
 public class leetcode_714_MaxProfit {
 
