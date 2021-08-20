@@ -49,7 +49,7 @@ public class MaxSubArray {
 
     public static void main(String[] args) {
         int[] a = {3, -2, -4, 0, 6};
-        System.out.println("result: " + maxLength(a, -2));
+        System.out.println("result: " + maxLength(a, 2));
     }
 
 }
