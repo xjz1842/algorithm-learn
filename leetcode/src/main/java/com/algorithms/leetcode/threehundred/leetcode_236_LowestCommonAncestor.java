@@ -1,7 +1,5 @@
 package com.algorithms.leetcode.threehundred;
 
-import sun.reflect.generics.tree.Tree;
-
 public class leetcode_236_LowestCommonAncestor {
 
     public static class TreeNode {

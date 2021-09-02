@@ -1,7 +1,6 @@
 package com.algorithms.leetcode.threehundred;
 
 
-import java.util.LinkedList;
 import java.util.Stack;
 
 public class leetcode_230_kthSmallest {
