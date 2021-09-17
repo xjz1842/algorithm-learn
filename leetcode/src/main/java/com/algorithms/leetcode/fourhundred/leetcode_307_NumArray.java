@@ -31,7 +31,7 @@ public class leetcode_307_NumArray {
             if(index % 2 == 0){
                 right = index+1;
             }else{
-                left = index-;
+                left = index - 1;
             }
             tree[index/2] = tree[left] + tree[right];
             index /= 2;

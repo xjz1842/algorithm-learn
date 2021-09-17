@@ -1,13 +1,26 @@
 package com.algorithms.leetcode.secondhundred;
 
 
-
-
-import javafx.util.Pair;
-
 import java.util.*;
 
 public class leetcode_126_LadderLength {
+
+    private static class Pair<K, V> {
+        K k;
+        V v;
+
+        public Pair(K k, V v) {
+            this.k = k;
+            this.v = v;
+        }
+        private K getKey(){
+            return k;
+        }
+
+        private V getValue(){
+            return v;
+        }
+    }
 
     public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
         //缓存
