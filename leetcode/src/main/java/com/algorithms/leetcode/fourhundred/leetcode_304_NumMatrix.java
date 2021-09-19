@@ -18,7 +18,7 @@ public class leetcode_304_NumMatrix {
         }
     }
 
-    public static int sumRegion(int row1, int col1, int row2, int col2) {
+    public  int sumRegion(int row1, int col1, int row2, int col2) {
         return matrixSum[row2+1][col2+1] - matrixSum[row1][col2+1] - matrixSum[row2+1][col1] + matrixSum[row1][col1];
     }
 
