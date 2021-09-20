@@ -2,7 +2,6 @@ package com.algorithms.leetcode.threehundred;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
 public class leetcode_217_ContainsDuplicate {
 
