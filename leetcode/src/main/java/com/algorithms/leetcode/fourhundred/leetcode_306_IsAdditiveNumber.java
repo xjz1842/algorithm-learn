@@ -30,7 +30,6 @@ public class leetcode_306_IsAdditiveNumber {
 
              if(j > i && chars[i] == '0')
                break;
-               
             cur = 10 * cur + (chars[j] - '0');
             if(count < 2){
                 if(dfs(j+1, num,chars,preValue, cur, count+1)){
@@ -50,5 +49,4 @@ public class leetcode_306_IsAdditiveNumber {
         String num = "112358";
         System.out.println(isAdditiveNumber(num));
     }
-    
 }

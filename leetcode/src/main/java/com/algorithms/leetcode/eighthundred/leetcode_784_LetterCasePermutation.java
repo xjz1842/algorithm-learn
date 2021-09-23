@@ -40,14 +40,16 @@ public class leetcode_784_LetterCasePermutation {
 
     //二分掩码
     public static List<String> letterCasePermutation1(String s) {
-        int B = 0;
-        for (char c: s.toCharArray())
-            if (Character.isLetter(c))
-                B++;
+        int b = 0;
+        for (char c: s.toCharArray()){
+            if (Character.isLetter(c)){
+                b++;
+            }
+        }
 
-        List<String> ans = new ArrayList();
+        List<String> ans = new ArrayList<>();
 
-        for(int bits = 0; bits < (1 << B); bits++){
+        for(int bits = 0; bits < (1 << b); bits++){
             StringBuilder word = new StringBuilder();
             int i = 0;
             char[] chars = s.toCharArray();
