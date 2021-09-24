@@ -52,8 +52,11 @@ public class leetcode_218_GetSkyline {
             while (!q.isEmpty()) {
                 int peek = q.peek();
                 if (map.containsKey(peek)) {
-                    if (map.get(peek) == 1) map.remove(peek);
-                    else map.put(peek, map.get(peek) - 1);
+                    if (map.get(peek) == 1) {
+                        map.remove(peek);
+                    }else{
+                        map.put(peek, map.get(peek) - 1);
+                    } 
                     q.poll();
                 } else {
                     break;
