@@ -13,19 +13,21 @@ public class leetcode_210_FindOrder {
         Queue<Integer> queue = new LinkedList<>();
         Queue<Integer> result = new LinkedList<>();
 
-        for (int i = 0; i < numCourses; i++)
+        for (int i = 0; i < numCourses; i++){
             adjacency.add(new ArrayList<>());
+        }
         // Get the indegree and adjacency of every course.
         for (int[] cp : prerequisites) {
             indegrees[cp[0]]++;
             adjacency.get(cp[1]).add(cp[0]);
         }
         // Get all the courses with the indegree of 0.
-        for (int i = 0; i < numCourses; i++)
+        for (int i = 0; i < numCourses; i++){
             if (indegrees[i] == 0) {
                 queue.add(i);
                 result.add(i);
             }
+        }
         // BFS TopSort.
         while (!queue.isEmpty()) {
             int pre = queue.poll();
@@ -53,7 +55,8 @@ public class leetcode_210_FindOrder {
         int[][] arr = new int[][]{
                 {1, 0},
         };
-        for (int i : findOrder(2, arr)) {
+        int n = 2;
+        for (int i : findOrder(n, arr)) {
             System.out.println(i);
         }
     }

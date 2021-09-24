@@ -11,12 +11,14 @@ public class leetcode_237_DeleteNode {
         }
     }
 
-        public static void deleteNode(ListNode node) {
-            if(node == null)
-                return;
-            node.val = node.next.val;
-            node.next = node.next.next;
+    public static void deleteNode(ListNode node) {
+        if (node == null) {
+            return;
         }
+
+        node.val = node.next.val;
+        node.next = node.next.next;
+    }
 
     public static void main(String[] args) {
         ListNode head = new ListNode(4);
@@ -26,7 +28,7 @@ public class leetcode_237_DeleteNode {
 
         deleteNode(head.next.next);
 
-        while (head != null){
+        while (head != null) {
             System.out.println(head.val);
             head = head.next;
         }

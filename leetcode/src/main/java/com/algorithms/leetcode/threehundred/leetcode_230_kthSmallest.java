@@ -36,7 +36,9 @@ public class leetcode_230_kthSmallest {
                 root = root.left;
             }
             root = stack.pop();
-            if (--k == 0) return root.val;
+            if (--k == 0) {
+                return root.val;
+             }
             root = root.right;
         }
     }
