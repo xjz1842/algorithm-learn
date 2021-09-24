@@ -4,8 +4,10 @@ package algorithms.LinkList;
 public class ReverseKGroup {
 
     public static ListNode reverseKGroup(ListNode head, int k) {
-        if (head == null) return null;
-
+        if (head == null){
+            return null;
+        }
+      
         ListNode[] list = new ListNode[k];
 
         int[] values = new int[k];
@@ -15,7 +17,9 @@ public class ReverseKGroup {
         ListNode cur = head;
         for (int i = 1; i < k; i++) {
             ListNode next = cur.next;
-            if (next == null) return null;
+            if (next == null) {
+                return null;
+            }
             list[i] = next;
             values[i] = next.val;
             cur = cur.next;
@@ -39,7 +43,9 @@ public class ReverseKGroup {
                 next = next.next;
             }
 
-            if (flag) break;
+            if (flag){
+                break;
+            }
         }
         return head;
     }

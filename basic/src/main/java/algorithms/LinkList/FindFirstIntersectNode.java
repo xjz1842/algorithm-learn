@@ -3,8 +3,9 @@ package algorithms.LinkList;
 public class FindFirstIntersectNode {
 
     public static ListNode getIntersectNode(ListNode head1, ListNode head2) {
-        if (head1 == null || head1 == null)
+        if (head1 == null || head1 == null){
             return null;
+        }
 
         ListNode loop1 = getLoopNode(head1);
         ListNode loop2 = getLoopNode(head2);
@@ -137,7 +138,7 @@ public class FindFirstIntersectNode {
         ListNode head2 = new ListNode(0);
         head2.next = new ListNode(9);
         head2.next.next = new ListNode(8);
-        head2.next.next.next = head1.next.next.next.next.next; // 8->6
+        head2.next.next.next = head1.next.next.next.next.next; 
         System.out.println(getIntersectNode(head1, head2).val);
 
         // 1->2->3->4->5->6->7->4...
@@ -148,20 +149,21 @@ public class FindFirstIntersectNode {
         head1.next.next.next.next = new ListNode(5);
         head1.next.next.next.next.next = new ListNode(6);
         head1.next.next.next.next.next.next = new ListNode(7);
-        head1.next.next.next.next.next.next = head1.next.next.next; // 7->4
+        head1.next.next.next.next.next.next = head1.next.next.next;
 
         // 0->9->8->2...
         head2 = new ListNode(0);
         head2.next = new ListNode(9);
         head2.next.next = new ListNode(8);
-        head2.next.next.next = head1.next; // 8->2
+        head2.next.next.next = head1.next; 
         System.out.println(getIntersectNode(head1, head2).val);
 
         // 0->9->8->6->4->5->6..
         head2 = new ListNode(0);
         head2.next = new ListNode(9);
         head2.next.next = new ListNode(8);
-        head2.next.next.next = head1.next.next.next.next.next; // 8->6
+        // 8->6
+        head2.next.next.next = head1.next.next.next.next.next; 
         System.out.println(getIntersectNode(head1, head2).val);
     }
 

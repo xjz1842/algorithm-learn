@@ -26,10 +26,11 @@ public class leetcode_306_IsAdditiveNumber {
             return true;
         }
         int cur = 0;
-        for(int j = i; j < chars.length; j++){  
+        for(int j = i; j < chars.length; j++){ 
 
-             if(j > i && chars[i] == '0')
-               break;
+             if(j > i && chars[i] == '0'){
+                break;
+             }
             cur = 10 * cur + (chars[j] - '0');
             if(count < 2){
                 if(dfs(j+1, num,chars,preValue, cur, count+1)){
