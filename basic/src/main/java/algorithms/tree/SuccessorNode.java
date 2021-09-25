@@ -31,8 +31,9 @@ public class SuccessorNode {
     }
 
     public static Node getLeftMost(Node node) {
-        if (node == null)
+        if (node == null){
             return node;
+        }
         while (node.left != null) {
             node = node.left;
         }

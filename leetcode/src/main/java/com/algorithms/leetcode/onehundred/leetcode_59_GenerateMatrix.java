@@ -3,7 +3,9 @@ package com.algorithms.leetcode.onehundred;
 public class leetcode_59_GenerateMatrix {
 
     public static int[][] generateMatrix(int n) {
-        if (n == 0) return new int[][]{};
+        if (n == 0){
+            return new int[][]{};
+        } 
         int[][] result = new int[n][n];
 
         int startLevel = 0;

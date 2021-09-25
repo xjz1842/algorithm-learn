@@ -8,8 +8,8 @@ public class leetcode_10_RegexMatch {
     //动态规划
     public static boolean isMatch(String s, String p) {
         int sLen = s.length(), pLen = p.length();
-
-        if (sLen == 0 && pLen == 0) {   // 边界特判
+        // 边界特判
+        if (sLen == 0 && pLen == 0) {  
             return true;
         }
         char[] ss = s.toCharArray();
@@ -18,13 +18,17 @@ public class leetcode_10_RegexMatch {
         boolean[][] dp = new boolean[sLen + 1][pLen + 1];
         //dp[i][j]表示s的0到i-1和p的0到j-1是否匹配
 
-        if (pp[0] == '*') return false;  // 星号前面没有其他字符是非法的状态
+        // 星号前面没有其他字符是非法的状态
+        if (pp[0] == '*'){
+            return false;
+        }
 
         dp[0][0] = true;
 
         for (int j = 1; j < pLen + 1; j++) {
-            if (pp[j - 1] == '*')
+            if (pp[j - 1] == '*'){
                 dp[0][j] = dp[0][j - 2];
+            }
         }
 
         //初始化s=0

@@ -9,8 +9,9 @@ public class leetcode_45_Jump {
      * 你的目标是使用最少的跳跃次数到达数组的最后一个位置。
      */
     private static int jump(int[] nums) {
-        if (nums == null || nums.length == 0)
+        if (nums == null || nums.length == 0){
             return 0;
+        }
 
         int len = nums.length;
         int[] dp = new int[len];
@@ -19,7 +20,9 @@ public class leetcode_45_Jump {
         dp[0] = 0;
 
         for (int i = 1, j = 0; i < len; i++) {
-            while (j < i && (j + nums[j]) < i) j++;
+            while (j < i && (j + nums[j]) < i){
+                j++;
+            } 
             dp[i] = dp[j] + 1;
         }
         return dp[len - 1];

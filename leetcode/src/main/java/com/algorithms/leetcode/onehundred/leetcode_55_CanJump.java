@@ -21,8 +21,9 @@ public class leetcode_55_CanJump {
             for (int j = 0; j < i; j++) {
 
                 if (j < i && ((j + nums[j]) >= i)) {
-                    if (dp[j])
+                    if (dp[j]){
                         dp[i] = true;
+                    }
                     break;
                 }
             }

@@ -17,8 +17,9 @@ public class SnakeTraversal {
     }
 
     public static void snakeTraversal(Node head) {
-        if (head == null) return;
-
+        if (head == null) {
+            return; 
+        }
         Queue<Node> queue = new LinkedList<>();
         queue.add(head);
 

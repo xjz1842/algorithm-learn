@@ -209,8 +209,9 @@ public class SerializeAndReconstructTree {
     }
 
     private static Node generateNode(String val) {
-        if (val == null)
+        if (val == null){
             return null;
+        }
         return new Node(Integer.valueOf(val));
     }
 

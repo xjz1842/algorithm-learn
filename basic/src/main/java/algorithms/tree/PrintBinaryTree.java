@@ -19,8 +19,9 @@ public class PrintBinaryTree {
     }
 
     public static void printMidOrder(Node head, int height, String to, int len) {
-        if (head == null)
+        if (head == null){
             return;
+        }
 
         printMidOrder(head.right, height + 1, "v", len);
         String val = to + head.value + to;

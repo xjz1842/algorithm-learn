@@ -8,7 +8,9 @@ public class leetcode_90_SubsetsWithDup {
 
 
     public static List<List<Integer>> subsetsWithDup(int[] nums) {
-        if (nums == null || nums.length == 0) return new ArrayList<>();
+        if (nums == null || nums.length == 0){
+            return new ArrayList<>();
+        } 
         List<List<Integer>> ans = new ArrayList<>();
         Arrays.sort(nums);
         List<Integer> tmp = new ArrayList<>();

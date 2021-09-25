@@ -41,7 +41,9 @@ public class leetcode_68_FullJustify {
     //当前单词的长度
     private static int wordsLength(int left, int right, String[] words) {
         int wordsLength = 0;
-        for (int i = left; i <= right; i++) wordsLength += words[i].length();
+        for (int i = left; i <= right; i++){
+            wordsLength += words[i].length();
+        } 
         return wordsLength;
     }
 

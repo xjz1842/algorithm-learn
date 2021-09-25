@@ -17,7 +17,9 @@ public class leetcode_19_RemoveNthFromEnd {
     }
 
     public static ListNode removeNthFromEnd(ListNode head, int n) {
-        if (n < 0) return null;
+        if (n < 0) {
+            return null;
+        }
 
         List<ListNode> list = new ArrayList<>();
 

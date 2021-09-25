@@ -45,9 +45,9 @@ import java.util.Stack;
 public class LargestRectangleArea {
 
     public static int largestRectangleArea(int[] heights) {
-        if (heights == null || heights.length == 0)
+        if (heights == null || heights.length == 0){
             return 0;
-
+        }
         //利用递增栈
         Stack<Integer> stack = new Stack<>();
         //初始化

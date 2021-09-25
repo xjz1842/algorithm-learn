@@ -5,8 +5,9 @@ public class leetcode_32_LongestValidParentheses {
 
     //动态规划
     private static int longestValidParentheses(String s) {
-        if (s == null || s.length() == 0) return 0;
-
+        if (s == null || s.length() == 0){
+            return 0;
+        } 
         char[] ss = s.toCharArray();
 
         int len = ss.length;

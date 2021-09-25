@@ -36,8 +36,9 @@ package com.algorithms.interview.strMatch;
 public class ShortestPalindrome {
 
     public static String shortestPalindrome(String s) {
-        if (s == null)
+        if (s == null){
             return null;
+        }
 
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(s).append("#").append(new StringBuilder(s).reverse().toString());

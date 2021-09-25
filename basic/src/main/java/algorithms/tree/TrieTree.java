@@ -142,7 +142,9 @@ public class TrieTree {
         }
 
         public void insert(String word) {
-            if (word == null) return;
+            if (word == null){
+                return;
+            } 
 
             char[] chs = word.toCharArray();
             Node2 node = root;
@@ -183,8 +185,9 @@ public class TrieTree {
 
         // word这个单词之前加入过几次
         public int search(String word) {
-
-            if (word == null) return 0;
+            if (word == null){
+                return 0;
+            } 
 
             char[] chs = word.toCharArray();
             Node2 node = root;

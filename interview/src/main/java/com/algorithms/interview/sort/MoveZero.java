@@ -16,10 +16,11 @@ public class MoveZero {
         int i = 0, l = 0, r = N - 1;
         while (i <= r) {
             // case: 不等于0, 则往左放
-            if (A[i] != 0)
+            if (A[i] != 0){
                 swap(A, l++, i++);
-            else
-               i++;
+            }else{
+                i++;
+            }
         }
     }
 }

@@ -32,9 +32,9 @@ package com.algorithms.interview.greedy;
  */
 public class MaxArea {
     public static int maxArea(int[] A) {
-        if (A == null)
+        if (A == null){
             return 0;
-
+        }
         final int N = A.length;
         int i = 0;
         int j = N - 1;

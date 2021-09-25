@@ -15,7 +15,9 @@ public class leetcode_61_RotateRight {
     }
 
     public static ListNode rotateRight(ListNode head, int k) {
-        if (head == null || k == 0) return head;
+        if (head == null || k == 0){
+            return head;
+        } 
 
         int lenght = 0;
         ListNode cur = head;

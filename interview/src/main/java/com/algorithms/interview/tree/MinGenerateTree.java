@@ -27,15 +27,27 @@ public class MinGenerateTree {
         return F[x];
     }
 
-    // 在合并的时候，需要加上代价
+    /**
+     * 在合并的时候，需要加上代价
+     * @param x
+     * @param y
+     * @param pay
+     */
     private void Union(int x, int y, int pay) {
-        if (Find(x) != Find(y)) cost += pay;
+        if (Find(x) != Find(y)){
+            cost += pay;
+        }
         F[Find(x)] = Find(y);
     }
 
-    // 一共有n个点，编号从1~n
-    // conn表示输入的边的集合
-    // 每一项是一个三元组[点a, 点b, 需要费用c]
+    /**
+     * 一共有n个点，编号从1~n
+     * conn表示输入的边的集合,每一项是一个三元组[点a, 点b, 需要费用c]
+     * @param n
+     * @param m
+     * @param conn
+     * @return
+     */
     public long Kruskal(int n, int m, int[][] conn) {
         Init(n);
         // 边集的排序

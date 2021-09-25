@@ -4,9 +4,9 @@ public class leetcode_41_FirstMissingPositive {
 
 
     public static int firstMissingPositive(int[] nums) {
-
-        if (nums == null || nums.length == 0)
+        if (nums == null || nums.length == 0){
             return 1;
+        }
 
         int len = nums.length;
 
