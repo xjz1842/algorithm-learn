@@ -1,4 +1,4 @@
-package com.algorithms.leetcode.threehundred;
+package com.algorithms.leetcode.fourhundred;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package com.algorithms.leetcode.threehundred;
+package com.algorithms.leetcode.fourhundred;
 
 
 public class leetcode_326_IsPowerOfThree {
