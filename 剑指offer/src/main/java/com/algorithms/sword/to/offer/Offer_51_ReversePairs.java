@@ -23,6 +23,9 @@ public class Offer_51_ReversePairs {
         // 分治
         int leftReversPair = mergeSort(nums,left,mid,temp);
         int rightReversPair = mergeSort(nums,mid+1,right,temp);
+        if(nums[mid] <= nums[mid+1]){
+            return leftReversPair + rightReversPair;
+        }
         //合并
         int crossReversPair = merge(nums,left,mid,right,temp);
         return leftReversPair + rightReversPair + crossReversPair;
