@@ -3,6 +3,10 @@ package com.algorithms.leetcode.fourhundred;
 public class leetcode_342_IsPowerOfFour {
 
     public static boolean isPowerOfFour(int n) {
+        if(n <= 0){
+            return false;
+        }
+
         //从低到高 第一个不为0的位置
         int res = n & (-n);
 
