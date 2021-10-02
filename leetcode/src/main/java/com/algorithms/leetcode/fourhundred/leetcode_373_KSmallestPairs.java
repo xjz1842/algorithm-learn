@@ -11,7 +11,6 @@ public class leetcode_373_KSmallestPairs {
         int len1=nums1.length,len2=nums2.length;
         int[] pos=new int[len1];
         List<List<Integer>> res = new ArrayList<>();
-
         //nums1[index]是组合的第一个数，nums2[pos[index]]是组合的第二个数
         Queue<Integer> queue=new PriorityQueue<>((index1, index2)->nums1[index1]+nums2[pos[index1]]-nums1[index2]-nums2[pos[index2]]);
         for(int i=0;i<Math.min(k,len1);++i){
