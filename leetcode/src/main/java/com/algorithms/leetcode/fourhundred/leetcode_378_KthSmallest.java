@@ -28,7 +28,7 @@ public class leetcode_378_KthSmallest {
             if (count[0] >= k) {
                 res = count;
                 r = mid;
-            } else if (count[0] < k) {
+            } else {
                 l = mid + 1;
             }
         }
