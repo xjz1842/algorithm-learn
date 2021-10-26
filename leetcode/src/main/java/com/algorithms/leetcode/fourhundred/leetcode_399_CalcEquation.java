@@ -195,7 +195,7 @@ public class leetcode_399_CalcEquation {
 
         public double isConnected(int x, int y) {
             int rootX = find(x);
-            int rootY = find(·y);
+            int rootY = find(y);
             if (rootX == rootY) {
                 return weight[x] / weight[y];
             } else {
