@@ -22,7 +22,7 @@ public class Leetcode_402_RemoveKdigits {
            }
            stack.push(digit);
        }
-        //如果k > 0
+        //如果k > 0 知道移除到满足k个元素
         while (k > 0){
             stack.pop();
             k--;
@@ -30,6 +30,7 @@ public class Leetcode_402_RemoveKdigits {
         StringBuilder ans = new StringBuilder();
         while (!stack.isEmpty()){
            Integer top =  stack.pollLast();
+           // 解去掉前导0
            if(top > 0 || ans.length() > 0){
                ans.append(top);
            }
