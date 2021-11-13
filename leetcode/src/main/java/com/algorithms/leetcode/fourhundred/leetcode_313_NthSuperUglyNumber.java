@@ -67,6 +67,10 @@ public class leetcode_313_NthSuperUglyNumber {
         ans[0] = 1;
         for (int j = 1; j < n; ) {
             int[] poll = q.poll();
+            // 我们可以构造一个存储三元组的小根堆，三元组信息为 (val, i, idx)
+            // val ：为当前列表指针指向具体值；
+            // i：代表这是由 primes[i] 构造出来的有序序列；
+           // idx：代表丑数下标，存在关系 val = ans[idx] * primes[i]
             int val = poll[0], i = poll[1], idx = poll[2];
             if (val != ans[j - 1]) {
                 ans[j++] = val;
