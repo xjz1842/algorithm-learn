@@ -28,9 +28,6 @@ public class leetcode_01_TwoSum {
         for (int i : twoSum(arr, 6)) {
             System.out.println(i);
         }
-        File file = new File("/Users/zxj/github/algorithms/leetcode/src/main/java/com/algorithms/leetcode/onehundred");
-
-        System.out.println(file.listFiles().length);
     }
 
 }
