@@ -23,8 +23,9 @@ public class IsFullTree {
     }
 
     public static int h(Node head) {
-        if (head == null) return 0;
-
+        if (head == null){
+            return 0;
+        } 
         return Math.max(h(head.left), h(head.right)) + 1;
     }
 

@@ -99,8 +99,9 @@ public class QuickSort {
 
     // 主函数，将数组nums排序
     void quickSort(int[] nums) {
-        if (nums == null)
+        if (nums == null){
             return;
+        }
         qsort(nums, 0, nums.length);
     }
 }

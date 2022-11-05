@@ -3,9 +3,9 @@ package com.algorithms.leetcode.onehundred;
 public class leetcode_16_ThreeSumClosest {
 
     public static int threeSumClosest(int[] nums, int target) {
-        if (nums == null || nums.length < 3)
+        if (nums == null || nums.length < 3){
             return 0;
-
+        }
         int l = 0;
         int r = nums.length - 1;
         int closet = Integer.MAX_VALUE;

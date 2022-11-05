@@ -9,8 +9,9 @@ import java.util.PriorityQueue;
 public class SortArrayDistanceLessK {
 
     public static void sortedArrDistanceLessK(int[] arr, int k) {
-        if (k == 0) return;
-
+        if (k == 0){
+            return;
+        }
         //默认小根堆
         PriorityQueue<Integer> heap = new PriorityQueue();
 

@@ -65,8 +65,9 @@ public class FindThreeTimesNumber {
         // 切分完毕之后，只有三个区间
         // [b, l) [l, i) [i, N)
         // 首先看中间的区间
-        if (i - l == 1)
+        if (i - l == 1){
             return A[l];
+        }
         // 再看左区间
         if (((l - b) & 0x01) == 1) {
             return threeSplit(A, b, l);

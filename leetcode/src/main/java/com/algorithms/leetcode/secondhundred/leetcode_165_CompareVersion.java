@@ -26,7 +26,7 @@ public class leetcode_165_CompareVersion {
                 version2Arr[i] = extractZero(version2Arr[i]);
                 if (Integer.parseInt(version1Arr[i]) > Integer.parseInt(version2Arr[i])) {
                     return 1;
-                } else if (Integer.parseInt(version1Arr[i]) == Integer.parseInt(version2Arr[i])) {
+                } else if (Integer.valueOf(version1Arr[i]).equals(Integer.valueOf(version2Arr[i]))){
                     i++;
                 } else {
                     return -1;
@@ -72,7 +72,8 @@ public class leetcode_165_CompareVersion {
     }
 
     private static String extractZero(String str) {
-        while (str.startsWith("0") && str.length() > 1) {
+        String zero = "0";
+        while (str.startsWith(zero) && str.length() > 1) {
             str = str.substring(1);
         }
         return str;

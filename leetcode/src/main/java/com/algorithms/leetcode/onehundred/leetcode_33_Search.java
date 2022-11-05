@@ -65,8 +65,9 @@ public class leetcode_33_Search {
      */
     public static int[] searchRange(int[] nums, int target) {
 
-        if (nums == null)
+        if (nums == null){
             return new int[]{1, 1};
+        }
 
         int[] result = new int[2];
 

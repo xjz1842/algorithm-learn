@@ -11,8 +11,9 @@ package com.algorithms.interview.heap;
 public class GetMinK {
 
     public static int[] getLeastNumbers(int[] arr, int k) {
-        if (arr == null || arr.length == 0 || arr.length < k)
+        if (arr == null || arr.length == 0 || arr.length < k){
             return new int[]{};
+        }
 
         Heap heap = new Heap(k);
 

@@ -27,8 +27,9 @@ public class HeapSort {
 
     // O(N*logN)
     public static void heapSort(int[] arr) {
-        if (arr == null || arr.length < 2)
+        if (arr == null || arr.length < 2){
             return;
+        }
         int heapSize = arr.length;
 //      for (int i = 0; i < len; i++) {
 //           heapInsert(arr, i);

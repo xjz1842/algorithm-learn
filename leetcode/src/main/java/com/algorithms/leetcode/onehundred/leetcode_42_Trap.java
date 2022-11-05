@@ -8,7 +8,9 @@ import java.util.Stack;
 public class leetcode_42_Trap {
 
     public static int trap(int[] height) {
-        if (height == null || height.length <= 2) return 0;
+        if (height == null || height.length <= 2) {
+            return 0;
+        }
 
         int l = 0;
         int r = height.length - 1;
@@ -22,7 +24,9 @@ public class leetcode_42_Trap {
                 while (!stack.isEmpty() && height[i] > height[stack.peek()]) {
                     int mid = stack.pop();
 
-                    if (stack.isEmpty()) break;
+                    if (stack.isEmpty()){
+                        break;
+                    } 
 
                     l = stack.peek();
 

@@ -34,7 +34,9 @@ public class Subset2 {
             return;
         }
         for (int j = start; j < N; j++) {
-            if (j > start && A[j] == A[j-1]) continue;
+            if (j > start && A[j] == A[j-1]){
+                continue;
+            } 
             box.add(A[j]);
             backtrace(A, j + 1, box, ans);
             box.remove(box.size()-1);

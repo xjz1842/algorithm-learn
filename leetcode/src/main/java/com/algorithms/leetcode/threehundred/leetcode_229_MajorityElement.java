@@ -44,16 +44,23 @@ public class leetcode_229_MajorityElement {
         count1 = 0;
         count2 = 0;
         for (int num : nums) {
-            if (cand1 == num) count1++;
-            else if (cand2 == num) count2++;
+            if (cand1 == num) {
+                count1++;
+            } else if (cand2 == num) {
+                count2++;
+            }
         }
-        if (count1 > nums.length / 3) res.add(cand1);
-        if (count2 > nums.length / 3) res.add(cand2);
+        if (count1 > nums.length / 3) {
+            res.add(cand1);
+        }
+        if (count2 > nums.length / 3) {
+            res.add(cand2);
+        }
         return res;
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[]{3, 2, 3};
+        int[] nums = new int[] { 3, 2, 3 };
         System.out.println(majorityElement(nums));
     }
 }

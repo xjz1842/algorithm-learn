@@ -3,12 +3,15 @@ package com.algorithms.leetcode.onehundred;
 public class leetcode_74_SearchMatrix {
 
     public static boolean searchMatrix(int[][] matrix, int target) {
-        if (matrix == null || matrix.length == 0)
+        if (matrix == null || matrix.length == 0){
             return false;
+        }
 
         int x = matrix.length;
         int y = matrix[0].length;
-        if (y == 0) return false;
+        if (y == 0){
+            return false;
+        } 
 
         int targetRow = -1;
         for (int i = 0; i < matrix.length; i++) {

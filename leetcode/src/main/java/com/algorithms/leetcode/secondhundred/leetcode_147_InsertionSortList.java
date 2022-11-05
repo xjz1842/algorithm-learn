@@ -44,23 +44,32 @@ public class leetcode_147_InsertionSortList {
 
 
     public static ListNode insertionSortList1(ListNode head) {
-        if (head == null || head.next == null)
+        if (head == null || head.next == null){
             return head;
-        ListNode pre = head, cur = head.next;           //使用前驱节点pre便于后续节点的删除操作
-        ListNode dummy = new ListNode(0);         //建立一个头结点，便于链表的插入
+        }
+        //使用前驱节点pre便于后续节点的删除操作
+        ListNode pre = head, cur = head.next;
+         //建立一个头结点，便于链表的插入
+        ListNode dummy = new ListNode(0);
         dummy.next = head;
         while (cur != null) {
-            if (pre.val < cur.val) {                   //前后节点已经有序，无需重排
+           //前后节点已经有序，无需重排
+            if (pre.val < cur.val) {
                 pre = cur;
                 cur = cur.next;
             } else {
                 ListNode p = dummy;
-                while (p.next != cur && p.next.val < cur.val)
+                while (p.next != cur && p.next.val < cur.val){
                     p = p.next;
-                pre.next = cur.next;         //删除当前节点
-                cur.next = p.next;          //将当前节点连接到对应位置
-                p.next = cur;               // 将cur放在正确的位置
-                cur = pre.next;           //往后移动
+                }
+               //删除当前节点
+                pre.next = cur.next;
+                //将当前节点连接到对应位置
+                cur.next = p.next;
+                 // 将cur放在正确的位置
+                p.next = cur;
+                  //往后移动
+                cur = pre.next;
             }
         }
         return dummy.next;

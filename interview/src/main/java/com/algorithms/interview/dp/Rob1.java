@@ -17,8 +17,9 @@ public class Rob1 {
 
     public static int rob(int[] nums){
         //边界
-        if(nums == null || nums.length == 0)
+        if(nums == null || nums.length == 0){
             return 0;
+        }
         int len = nums.length;
         //线性DP
         int[] dp = new int[len];

@@ -45,8 +45,9 @@ public class CombinationSum3 {
      * @param ans 结果
      */
     private static void backtrace(int i, int n, int k, int sum,List<Integer> candidate, List<List<Integer>> ans) {
-        if(i > n && candidate.size() > k)
+        if(i > n && candidate.size() > k){
             return;
+        }
         if(sum == n && candidate.size() == k){
             ans.add(new ArrayList<>(candidate));
         }

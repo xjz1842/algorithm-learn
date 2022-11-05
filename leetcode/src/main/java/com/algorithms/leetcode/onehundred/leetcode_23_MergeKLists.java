@@ -15,7 +15,9 @@ public class leetcode_23_MergeKLists {
     }
 
     public ListNode mergeKLists(ListNode[] lists) {
-        if (lists == null || lists.length == 0) return null;
+        if (lists == null || lists.length == 0){
+            return null;
+        } 
         if (lists.length == 1 && lists[0] == null) {
             return null;
         }

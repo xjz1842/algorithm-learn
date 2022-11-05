@@ -7,8 +7,9 @@ import java.util.List;
 public class leetcode_46_Permute {
 
     public static List<List<Integer>> permute(int[] nums) {
-        if (nums == null || nums.length == 0)
+        if (nums == null || nums.length == 0){
             return new ArrayList<>();
+        }
 
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> out = new ArrayList<>();

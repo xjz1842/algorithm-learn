@@ -3,10 +3,13 @@ package com.algorithms.leetcode.onehundred;
 public class leetcode_26_RemoveDuplicates {
 
     public static int removeDuplicates(int[] nums) {
+        if (nums == null || nums.length == 0){
+            return 0;
+        } 
 
-        if (nums == null || nums.length == 0) return 0;
-
-        if (nums.length == 1) return 0;
+        if (nums.length == 1){
+            return 0;
+        } 
 
         int i = 0;
         int j = 1;
@@ -23,8 +26,9 @@ public class leetcode_26_RemoveDuplicates {
     }
 
     public static int removeElement(int[] nums, int val) {
-        if (nums == null || nums.length == 0) return 0;
-
+        if (nums == null || nums.length == 0){
+            return 0;
+        }
 
         int i = 0;
         int j = 0;

@@ -24,8 +24,12 @@ public class leetcode_218_GetSkyline {
          * 3. 如果同样都是右端点，则按照高度「从小到大」进行处理（将高度从优先队列中删掉）
          */
         ps.sort((a, b) -> {
-            if (a[0] != b[0]) return a[0] - b[0];
-            if (a[2] != b[2]) return a[2] - b[2];
+            if (a[0] != b[0]){
+                return a[0] - b[0];
+            }
+            if (a[2] != b[2]){
+                return a[2] - b[2];
+            }
             if (a[2] == -1) {
                 return b[1] - a[1];
             } else {
@@ -48,8 +52,11 @@ public class leetcode_218_GetSkyline {
             while (!q.isEmpty()) {
                 int peek = q.peek();
                 if (map.containsKey(peek)) {
-                    if (map.get(peek) == 1) map.remove(peek);
-                    else map.put(peek, map.get(peek) - 1);
+                    if (map.get(peek) == 1) {
+                        map.remove(peek);
+                    }else{
+                        map.put(peek, map.get(peek) - 1);
+                    } 
                     q.poll();
                 } else {
                     break;

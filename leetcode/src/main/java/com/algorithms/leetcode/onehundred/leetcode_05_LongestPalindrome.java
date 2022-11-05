@@ -31,8 +31,9 @@ public class leetcode_05_LongestPalindrome {
                 //以 i为轴的对称点
                 int k = 2 * i - j;
                 if (k >= 0) {
-                    if (newArr[k] == '#')
+                    if (newArr[k] == '#'){
                         continue;
+                    }
                     if (newArr[k] == newArr[j]) {
                         startIndex = k;
                         endIndex = j;

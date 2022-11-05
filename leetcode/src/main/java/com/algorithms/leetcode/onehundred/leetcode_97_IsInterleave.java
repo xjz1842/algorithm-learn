@@ -3,8 +3,9 @@ package com.algorithms.leetcode.onehundred;
 public class leetcode_97_IsInterleave {
 
     public static boolean isInterleave(String s1, String s2, String s3) {
-        if (s1 == null || s2 == null || s3 == null)
+        if (s1 == null || s2 == null || s3 == null){
             return false;
+        }
         char[] s1Arr = s1.toCharArray();
         char[] s2Arr = s2.toCharArray();
         char[] s3Arr = s3.toCharArray();

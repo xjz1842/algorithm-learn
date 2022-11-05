@@ -1,14 +1,13 @@
 package com.algorithms.leetcode.threehundred;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class leetcode_241_DiffWaysToCompute {
 
-    //采用分治
-    static  char[] cArr;
-    static  int len;
+    // 采用分治
+    static char[] cArr;
+    static int len;
     static List<Integer> res = new ArrayList<Integer>();
 
     public static List<Integer> diffWaysToCompute(String input) {
@@ -16,6 +15,7 @@ public class leetcode_241_DiffWaysToCompute {
         len = input.length();
         return dfsHelper(0, len - 1);
     }
+
     private static List<Integer> dfsHelper(int l, int r) {
         int idx = l;
         List<Integer> nArr = new ArrayList<Integer>();
@@ -29,15 +29,22 @@ public class leetcode_241_DiffWaysToCompute {
             return nArr;
         }
         for (int i = idx; i <= r; i++) {
-            if (Character.isDigit(cArr[i])) continue;
+            if (Character.isDigit(cArr[i])) {
+                continue;
+            }
             List<Integer> left = dfsHelper(l, i - 1);
             List<Integer> right = dfsHelper(i + 1, r);
-            for (int val_l : left) {
-                for (int val_r : right) {
-                    char opt = cArr[i]; int output = 0;
-                    if (opt == '+') output = val_l + val_r;
-                    else if (opt == '-') output = val_l - val_r;
-                    else if (opt == '*') output = val_l * val_r;
+            for (int valL : left) {
+                for (int valR : right) {
+                    char opt = cArr[i];
+                    int output = 0;
+                    if (opt == '+') {
+                        output = valL + valR;
+                    } else if (opt == '-') {
+                        output = valL - valR;
+                    } else if (opt == '*') {
+                        output = valL * valR;
+                    }
                     nArr.add(output);
                 }
             }

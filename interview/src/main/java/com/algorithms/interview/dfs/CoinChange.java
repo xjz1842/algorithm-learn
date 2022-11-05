@@ -1,9 +1,7 @@
 package com.algorithms.interview.dfs;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * @lc app=leetcode.cn id=322 lang=java
@@ -70,11 +68,12 @@ public class CoinChange {
     }
 
     public static int coinChange(int[] coins, int amount) {
-        if (amount < 0)
+        if (amount < 0){
             return -1;
-        if (amount == 0)
+        }
+        if (amount == 0){
             return 0;
-
+        }
         build(coins);
 
         int ans = dfs(coins, amount);

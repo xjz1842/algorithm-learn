@@ -30,14 +30,17 @@ public class ThreeSplit {
         int i = 0, l = 0, r = N - 1;
         while (i <= r) {
             // case 0: 需要将0元素放到左区间。l++, i++完成[L, i)区间的平移。
-            if (A[i] == 0)
+            if (A[i] == 0){
                 swap(A, l++, i++);
-                // case 1: 元素1直接append在[L, i)区间的后面就可以了。
-            else if (A[i] == 1)
+            }
+            // case 1: 元素1直接append在[L, i)区间的后面就可以了。
+            else if (A[i] == 1){
                 i++;
+            }
                 // case 2: 元素2需要与A[r]交换。然后区间(r, N)向左扩张
-            else
+            else{
                 swap(A, r--, i);
+            }
         }
     }
 

@@ -3,7 +3,9 @@ package com.algorithms.leetcode.onehundred;
 public class leetcode_70_ClimbStairs {
 
     public static int climbStairs(int n) {
-        if (n == 0) return 0;
+        if (n == 0){
+            return 0;
+        } 
 
         int[] dp = new int[n + 1];
 
@@ -12,7 +14,9 @@ public class leetcode_70_ClimbStairs {
                 dp[1] = 1;
             } else if (i == 2) {
                 dp[2] = 2;
-            } else dp[i] = dp[i - 1] + dp[i - 2];
+            } else{
+                dp[i] = dp[i - 1] + dp[i - 2];
+            } 
         }
         return dp[n];
     }

@@ -6,7 +6,9 @@ import java.util.List;
 public class leetcode_93_RestoreIpAddresses {
 
     public static List<String> restoreIpAddresses(String s) {
-        if (s == null) return new ArrayList<>();
+        if (s == null){
+            return new ArrayList<>();
+        } 
 
         String s1 = null;
         String s2 = null;

@@ -5,8 +5,10 @@ import java.util.*;
 public class leetcode_49_GroupAnagrams {
 
     private static List<List<String>> groupAnagrams(String[] strs) {
-        if (strs == null || strs.length == 0)
+        if (strs == null || strs.length == 0){
             return new ArrayList<>();
+        }
+
         int len = strs.length;
 
         Map<String, List<Integer>> map = new HashMap<>();

@@ -10,7 +10,9 @@ public class PagerFolding {
     // i是节点的层数，N一共的层数，down == true  凹    down == false 凸
     private static void printProcess(int i, int N, boolean down) {
 
-        if (i > N) return;
+        if (i > N){
+            return;
+        }
 
         printProcess(i + 1, N, true);
 

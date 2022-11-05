@@ -19,7 +19,9 @@ public class leetcode_95_GenerateTrees {
     }
 
     public static List<TreeNode> generateTrees(int n) {
-        if (n == 0) return new ArrayList<>();
+        if (n == 0) {
+            return new ArrayList<>();
+        }
 
         return generateTrees(1, n);
     }
@@ -76,8 +78,9 @@ public class leetcode_95_GenerateTrees {
             } else {
                 result.add(String.valueOf(top.val));
             }
-            if (top.left == null && top.right == null)
+            if (top.left == null && top.right == null){
                 continue;
+            }
 
             queue.offer(top.left != null ? top.left : null);
             queue.offer(top.right != null ? top.right : null);

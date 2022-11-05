@@ -4,9 +4,9 @@ package com.algorithms.leetcode.onehundred;
 public class leetcode_44_IsMatch {
 
     public static boolean isMatch(String s, String p) {
-        if (s == null || p == null)
+        if (s == null || p == null){
             return false;
-
+        }
         int y = s.length();
         int x = p.length();
 

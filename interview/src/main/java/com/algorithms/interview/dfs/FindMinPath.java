@@ -79,8 +79,9 @@ public class FindMinPath {
             return;
         }
         // 剪枝1
-        if (shortPath != null && tmp.size() >= shortPath.size()) return;
-
+        if (shortPath != null && tmp.size() >= shortPath.size()) {
+            return;
+        }
         // 剪枝2
         // 如果发现走到step[r][c]比以前用了更多的步数，那么直接返回
         if (tmp.size() - 1 > step[r][c]) {

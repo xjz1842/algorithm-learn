@@ -31,22 +31,25 @@ public class MinK {
         int l = b;
         int r = e - 1;
         while (i <= r) {
-            if (A[i] < x)
+            if (A[i] < x){
                 swap(A, l++, i++);
-            else if (A[i] == x)
+            }else if (A[i] == x){
                 i++;
-            else
+            }else{
                 swap(A, r--, i);
+            }
         }
         // 分别拿到三段的长度
         final int lcnt = l - b;
         final int mcnt = i - l;
         // 如果第k个数落在左区间
-        if (k < lcnt)
+        if (k < lcnt){
             return kth(A, b, l, k);
+        }
         // 如果第k个数落在右区间
-        if (k >= (lcnt + mcnt))
+        if (k >= (lcnt + mcnt)){
             return kth(A, i, e, k - lcnt - mcnt);
+        }
         // 如果第k个数落在中间，那么直接返回x
         return x;
     }

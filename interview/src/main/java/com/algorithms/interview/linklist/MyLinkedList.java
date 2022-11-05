@@ -59,7 +59,9 @@ public class MyLinkedList {
     // 3. 如果index小于0，则在头部插入节点。
     /** Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. */
     public void addAtIndex(int index, int val) {
-        if(index > length)return;
+        if(index > length){
+            return;
+        }
         if(index == length){
             addAtTail(val);
             return;
@@ -78,7 +80,9 @@ public class MyLinkedList {
 
     /** Delete the index-th node in the linked list, if the index is valid. */
     public void deleteAtIndex(int index) {
-        if(index >= length || index < 0)return;
+        if(index >= length || index < 0){
+            return;
+        }
 
         ListNode pre = getPreNode(index);
 

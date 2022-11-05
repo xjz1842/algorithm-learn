@@ -1,4 +1,4 @@
-package com.algorithms.leetcode.threehundred;
+package com.algorithms.leetcode.fourhundred;
 
 
 public class leetcode_326_IsPowerOfThree {
@@ -19,8 +19,9 @@ public class leetcode_326_IsPowerOfThree {
         while (i < n) {
             i = 3 * i;
         }
-        if (i == n)
+        if (i == n){
             return true;
+        }
         return false;
     }
 

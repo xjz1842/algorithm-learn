@@ -6,8 +6,10 @@ import java.util.List;
 public class Palindrome {
 
     public static boolean isPalindrome(int x) {
-        if (x < 0) return false;
-
+        if (x < 0){
+            return false;
+        }
+ 
         List<Integer> str = new ArrayList<>();
 
         int low = x % 10;

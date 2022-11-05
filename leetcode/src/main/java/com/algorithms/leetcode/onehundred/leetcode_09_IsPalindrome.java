@@ -7,7 +7,9 @@ public class leetcode_09_IsPalindrome {
 
     public boolean isPalindrome(int x) {
 
-        if (x < 0) return false;
+        if (x < 0){
+            return false;
+        }
 
         List<Integer> str = new ArrayList<>();
 

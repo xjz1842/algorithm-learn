@@ -17,7 +17,9 @@ public class leetcode_30_FindSubstring {
         List<Integer> result = new ArrayList<>();
         int wordNum = words.length;
 
-        if (wordNum == 0) return result;
+        if (wordNum == 0){
+            return result;
+        }
 
         int wLen = words[0].length();
 
