@@ -1,7 +1,5 @@
 package com.algorithms.interview.backtrace;
 
-import javafx.scene.layout.HBox;
-
 import java.util.ArrayList;
 import java.util.List;
 
