@@ -7,7 +7,7 @@ public class BinarySearch {
         if (A == null || A.length == 0) {
             return false;
         }
-        //初始区间是左开右闭的
+        //初始区间是左区右开
         int l = 0;
         int r = A.length ;
 
