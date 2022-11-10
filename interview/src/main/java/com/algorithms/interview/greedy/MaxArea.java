@@ -1,8 +1,6 @@
 package com.algorithms.interview.greedy;
 
-/*
- * @lc app=leetcode.cn id=11 lang=java
- *
+/**
  * [11] 盛最多水的容器
  *
  * https://leetcode-cn.com/problems/container-with-most-water/description/
@@ -20,7 +18,6 @@ package com.algorithms.interview.greedy;
  * 示例 2：
  * 输入：height = [1,1]
  * 输出：1
- *
  *
  * 示例 3：
  * 输入：height = [4,3,2,1,4]
