@@ -4,8 +4,6 @@ public class Offer_51_ReversePairs {
 
     /**
      * 归并排序 O(N * log(N))
-     * @param nums
-     * @return
      */
     public static int reversePairs(int[] nums) {
         if(nums == null || nums.length == 0){
@@ -33,9 +31,7 @@ public class Offer_51_ReversePairs {
 
     private static int merge(int[] nums, int left, int mid, int right, int[] temp) {
         // back up
-        for(int i = left; i <= right; i++) {
-            temp[i] = nums[i];
-        }
+        if (right + 1 - left >= 0) System.arraycopy(nums, left, temp, left, right + 1 - left);
         int result = 0;
         int i = left;
         int j = mid + 1;
