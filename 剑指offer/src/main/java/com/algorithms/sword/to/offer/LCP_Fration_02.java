@@ -9,32 +9,34 @@ package com.algorithms.sword.to.offer;
  * 返回一个长度为2的数组[n, m]，使得连分数的值等于n / m，
  * 且n, m最大公约数为1。
  */
-public class LCP_Fration_01 {
+public class LCP_Fration_02 {
 
     public static int[] fraction(int[] cont) {
         if (cont == null || cont.length == 0) {
             return new int[]{};
         }
         if (cont.length == 1) {
-            return new int[]{cont[0],1};
+            return new int[]{cont[0], 1};
         }
         int m = cont[cont.length - 1];
         int n = cont[cont.length - 2];
-
+        //分子
         int numerator = (m * n + 1);
+        //分母
         int denominator = m;
         for (int i = cont.length - 3; i >= 0; i--) {
+            //交换分子 分母
             int tmp = numerator;
             numerator = denominator;
             denominator = tmp;
-            //分子
+            //计算分子
             numerator = cont[i] * denominator + numerator;
         }
         return new int[]{numerator, denominator};
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[]{0,0,3};
+        int[] arr = new int[]{3, 2, 0, 2};
         for (int i : fraction(arr)) {
             System.out.println(i);
         }
