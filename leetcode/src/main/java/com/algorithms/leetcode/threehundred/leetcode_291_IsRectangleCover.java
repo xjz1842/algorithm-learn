@@ -1,4 +1,4 @@
-package com.algorithms.leetcode.fourhundred;
+package com.algorithms.leetcode.threehundred;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -48,10 +48,7 @@ public class leetcode_291_IsRectangleCover {
             return false;
         }
         // 顶点情况是否满足
-        if(points.size() != 4 || !points.contains(X1 + " " + Y1) || !points.contains(X2 + " " + Y2) || !points.contains(X1 + " " + Y2) || !points.contains(X2 + " " + Y1)){
-            return false;
-        }
-        return true;
+        return points.size() == 4 && points.contains(X1 + " " + Y1) && points.contains(X2 + " " + Y2) && points.contains(X1 + " " + Y2) && points.contains(X2 + " " + Y1);
     }
 
     public static void main(String[] args) {
